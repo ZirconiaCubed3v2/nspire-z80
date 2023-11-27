@@ -256,6 +256,7 @@ int main(int argc, char **argv){
 	
 	savestate_save(romfn);
 	free(romfn);
+        refresh_osscr();
 #ifndef NO_LCD
 	if (g_calc.cselcd) {
 		cselcd_end();
